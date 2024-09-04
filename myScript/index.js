@@ -2,11 +2,42 @@ $(document).ready(function () {
   let progrssId = $("#prog");
 
   runWords();
+  $('.img-textt').css('height','40vh').css('padding','5px')
+  $(".img-textt").hide();
+$(".image-container").mouseover(function () {
+  $(this).css('boxShadow','0 0 5px purple')
+  $(this).find(".img-text").fadeOut(100); 
+
+  
+  $(this).find(".img-textt").show().css({
+    display: "flex",
+    alignItems: "center",
+    color: "white",
+    flexDirection: "column",
+    justifyContent: "center",
+    gap: "15px",
+    animationName: "fromTopp",
+    animationDuration: "1s",
+    animationFillMode: "forwards",
+  }); 
+});
+
+$(".image-container").mouseleave(function () {
+  $(this).find(".img-textt").fadeOut(1000); 
+  $(this).find("img").show().css({
+    animationName: "fromTopp",
+    animationDuration: "1s",
+    animationFillMode: "forwards",
+  }); 
+  $(this).css('boxShadow','none')
+  $(this).find(".img-text").fadeIn(100); 
+});
+
   function runWords() {
-    $(".left2").css("display","none");
+    $(".left2").css("display", "none");
     $(".right-2").css("display", "none");
     $("#moreBtn").click(function () {
-    window.scrollBy({
+      window.scrollBy({
         top: "600",
         behavior: "smooth",
       });
@@ -42,7 +73,40 @@ $(document).ready(function () {
   let navBar = $(".bg-custom");
   let myImg = $(".myImg");
   let topleft = $(".top-left-img");
+
   $(window).on("scroll", function () {
+    if (window.scrollY > $("#section1").outerHeight() / 6) {
+      $(".left2").css("display", "block");
+      $(".right-2").css("display", "block");
+    }
+  });
+  let isScrolled = false;
+  let myArr = [
+    { q: 0, y: 95, isScrolled: false, element: ".html-css div" },
+    { q: 0, y: 92, isScrolled: false, element: ".js-style div" },
+    { q: 0, y: 90, isScrolled: false, element: ".query-angular div" },
+    { q: 0, y: 95, isScrolled: false, element: ".b-strap div" },
+    { q: 0, y: 84, isScrolled: false, element: ".php-lara div" },
+    { q: 0, y: 84, isScrolled: false, element: ".my-sql div" },
+  ];
+  $(window).on("scroll", function () {
+    if (
+      window.scrollY >
+      $("#section2").outerHeight() + $("#section1").outerHeight() / 4
+    ) {
+      $.each(myArr, function (i, det) {
+        if (!det.isScrolled) {
+          setInterval(() => {
+            if (det.q < det.y) {
+              det.q++;
+              $(det.element).css("width", `${det.q}%`);
+              $(det.element).text(`${det.q}%`);
+            }
+          }, 100);
+          isScrolled = true;
+        }
+      });
+    }
     if (window.scrollY > 50) {
       navBar.css("backgroundColor", "black");
       myImg.css("display", "none");
@@ -72,12 +136,7 @@ $(document).ready(function () {
         opacity: "0.7",
       });
     }
-    if (window.scrollY > ($("#section1").outerHeight()/3)) {
-      $(".left2").css("display","block");
-   
-     
-      $(".right-2").css("display", "block");
-    }
+
     var scrollPos = $(document).scrollTop();
     let scrollHeight = window.scrollY;
     let windoWHeight =
@@ -88,7 +147,7 @@ $(document).ready(function () {
       var currLink = $(this);
       var refElement = $(currLink.attr("href"));
       if (
-        refElement.position().top <= scrollPos &&
+        refElement.position().top / 1.4 <= scrollPos &&
         refElement.position().top + refElement.height() > scrollPos
       ) {
         $(".navbar-nav a").css("color", "rgb(174, 164, 164)");
@@ -97,12 +156,21 @@ $(document).ready(function () {
     });
     $(".navbar-nav a").css("color", "rgb(174, 164, 164");
     $(".navbar-nav a").on("click", function () {
-     
       $(".navbar-nav a").css("color", "rgb(174, 164, 164)");
       $(this).css("color", "white");
       console.log(closestDotSpan);
       closestDotSpan.css("display", "block");
     });
   });
+  $(".progress-circle").css("transition", "0.2s ease-in-out");
+  $(".progress-circle").mouseover(function () {
+    let x = $(this).data("val");
+    let y = 0;
+    setInterval(() => {
+      y++;
+      if (y < x) {
+        $(this).css("--percentage", `${y}%`);
+      }
+    }, 10);
+  });
 });
-// 

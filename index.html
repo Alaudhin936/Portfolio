@@ -19,11 +19,14 @@
       href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Matemasie&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="myScript/index.js"></script>  
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="myScript/index.js"></script>
+  </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <style>
       body {
@@ -31,17 +34,13 @@
       }
     </style>
     <div class="navbar navbar-expand-md bg-custom fixed-top">
-      <div class="container-fluid cont" style="">
+      <div class="container-fluid cont">
         <div class="navbar-brand text-white brand">
           <img
             src="Asserts/navleftshadow_optimized.webp"
             class="top-left-img"
           />
-          <h1
-            class="port"
-          >
-            Portfolio
-          </h1>
+          <h1 class="port">Portfolio</h1>
         </div>
         <button
           class="navbar-toggler"
@@ -49,14 +48,11 @@
           data-bs-target="#canva"
           style="background-color: white"
         >
-        <script>
-       
-        </script>
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
           class="offcanvas mob-nav offcanvas-start text-white"
-          style="width: 60%;"
+          style="width: 60%"
           id="canva"
         >
           <div class="offcanvas-header">
@@ -67,58 +63,65 @@
               style="background-color: white"
             ></button>
           </div>
-          <style></style>
           <ul class="navbar-nav ms-auto nav-content mt-3" style="gap: 30px">
-            <li class="nav-item">
-              <a class="nav-link" href="#section1" id="myHome" >Home</a><span class="dot-span">...</span>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link" href="#section1" id="myHome">Home</a>
+              <span class="dot-span">...</span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section2">About</a><span class="dot-span">...</span>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link" href="#section2">About</a>
+              <span class="dot-span">...</span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Skills</a><span class="dot-span">...</span>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link" href="#section3">Skills</a>
+              <span class="dot-span">...</span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Projects</a><span class="dot-span">...</span>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link" href="#section4">Projects</a>
+              <span class="dot-span">...</span>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Contact</a><span class="dot-span">...</span>
+            <li class="nav-item" data-bs-dismiss="offcanvas">
+              <a class="nav-link">Contact</a>
+              <span class="dot-span">...</span>
             </li>
             <li class="nav-item">
               <img src="Asserts/navleftshadow_optimized.webp" class="myImg" />
               <button class="nav-link nav-btn">
-                <style></style>
-               <a href="https://drive.usercontent.google.com/u/0/uc?id=19G9zRm4xOF9s_QRBcgNEy4aUp9pI9rLL&export=download" style="text-decoration: none;"> Download CV</a>
+                <a
+                  href="https://drive.usercontent.google.com/u/0/uc?id=19G9zRm4xOF9s_QRBcgNEy4aUp9pI9rLL&export=download"
+                  style="text-decoration: none"
+                >
+                  Download CV
+                </a>
                 <img
-                  class="i" src="Asserts/arrow-right-solid.svg" 
-                  style="transition: 0.2s ease-in-out;width: 17px;"
-                ></i>
+                  class="i"
+                  src="Asserts/arrow-right-solid.svg"
+                  style="transition: 0.2s ease-in-out; width: 17px"
+                />
               </button>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    <style>
-    
-    </style>
-    <div class="progress" style="position: fixed;width: 100%;z-index: 2000;border-radius: 1%;height:0.2vh;background-color: black;">
-      <div class="progress-bar" style="background-color: white;;" id="prog"  ></div>
-  </div>
-  
-    <div id="section1" class="top-div" >
-      <style>
-        .p5cont{
-          padding: 2rem;
-        }
-        @media (max-width:700px){
-          .p5cont{
-            padding: 1em;
-          }
-        }
-      </style>
+
+    <div
+      class="progress"
+      style="
+        position: fixed;
+        width: 100%;
+        z-index: 2000;
+        border-radius: 1%;
+        height: 0.2vh;
+        background-color: black;
+      "
+    >
+      <div class="progress-bar" style="background-color: white" id="prog"></div>
+    </div>
+
+    <div id="section1" class="top-div">
       <div
-        class="container p5cont" 
+        class="container p5cont"
         style="
           position: absolute;
           top: 50%;
@@ -126,105 +129,501 @@
           transform: translate(-50%, -50%);
         "
       >
-      
-        <div class="row row-style" style="  font-family:'poppins' sans-serif;;color: white;font-weight: 800;letter-spacing: 3px;text-align: start;">
+        <div
+          class="row row-style"
+          style="
+            font-family: 'poppins', sans-serif;
+            color: white;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-align: start;
+          "
+        >
           <div
-            class="col-sm-7 content-left mx-auto d-flex   flex-column"  style="text-align: start;"
+            class="col-sm-7 content-left mx-auto d-flex flex-column"
+            style="text-align: start"
           >
-            <h1  class="style-h1">Hey You,Myself Alaudhin Helps In <br><span class="design" style="position: absolute;display: flex;flex-wrap:wrap;"> </span></h1>
-          <br>
-            <h4  class="mt-5 style-h2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, quam iusto? Dicta esse temporibus expedita voluptas nemo.       <br>
-          <br>  
-          <div class="social-media">
-        <a href="#">  <img src="Asserts/linkedin-brands-solid.svg"></a>  <img src="Asserts/facebook-brands-solid.svg"><img src="Asserts/envelope-solid.svg"><img src="Asserts/x-twitter-brands-solid.svg"><img src="Asserts/instagram-brands-solid.svg">
-          </div><br>
-          <button style="justify-content:start;;" class="btn btn-success" id="moreBtn">More About Me</button></h4>
+            <h1 class="style-h1">
+              Hey You, Myself Alaudhin Helps In <br /><span
+                class="design"
+                style="position: absolute; display: flex; flex-wrap: wrap"
+              >
+              </span>
+            </h1>
+            <br />
+            <h4 class="mt-5 style-h2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo,
+              quam iusto? Dicta esse temporibus expedita voluptas nemo.
+              <br /><br />
+              <div class="social-media">
+                <a href="#"><img src="Asserts/linkedin-brands-solid.svg" /></a>
+                <img src="Asserts/facebook-brands-solid.svg" />
+                <img src="Asserts/envelope-solid.svg" />
+                <img src="Asserts/x-twitter-brands-solid.svg" />
+                <img src="Asserts/instagram-brands-solid.svg" />
+              </div>
+              <br />
+              <button
+                style="justify-content: start"
+                class="btn btn-success"
+                id="moreBtn"
+              >
+                More About Me
+              </button>
+            </h4>
           </div>
           <div
             class="col-sm-3 mx-auto d-flex align-items-center img-right justify-content-center flex-column"
           >
-   <img src="Asserts/profiilee.png" class="profile-img">
+            <img src="Asserts/profiilee.png" class="profile-img" />
           </div>
         </div>
       </div>
     </div>
-    <div style="height: 100%;background-color: black;" id="section2">
-      <div class="container contt p5cont" >
+    <style>
+      .p5cont {
+        padding: 1.7rem;
+      }
+      @media (max-width: 700px) {
+        .p5cont {
+          padding: 1em;
+        }
+      }
+    </style>
+    <div style="height: 100%; background-color: black" id="section2">
+      <div class="container contt p5cont">
         <style>
-         .left2{
-        animation-name:   page2Ani;
-  animation-duration: 1.2s;
-  animation-iteration-count: initial;
-  animation-play-state: running;
-  animation-direction: normal;
-         }
-         .right-2{
-        animation-name: right2Ani;
-  animation-duration: 1.2s;
-  animation-iteration-count: initial;
-  animation-play-state: running;
-  animation-direction: normal;
-         }
-          @media (max-width:550px){
-            .row-pad{
-            font-size: 0.7em;
+          .left2 {
+            animation-name: page2Ani;
+            animation-duration: 1.2s;
+            animation-iteration-count: initial;
+            animation-play-state: running;
+            animation-direction: normal;
+          }
+          .right-2 {
+            animation-name: right2Ani;
+            animation-duration: 1.2s;
+            animation-iteration-count: initial;
+            animation-play-state: running;
+            animation-direction: normal;
+          }
+          @media (max-width: 550px) {
+            .row-pad {
+              font-size: 0.7em;
             }
           }
-          @keyframes page2Ani{
-            from{
+          @keyframes page2Ani {
+            from {
               transform: translateY(-100%);
             }
           }
-          @keyframes right2Ani{
-            from{
+          @keyframes right2Ani {
+            from {
               transform: translateY(200%);
             }
           }
         </style>
-        <div class="row row-pad" style="font-family: monospace;" >
-          <div class="col-sm-5 left2" >
-            <img src="Asserts/lee-campbell-DtDlVpy-vvQ-unsplash.jpg" style="width: 100%;">
-                     </div>
+        <div class="row row-pad">
+          <div class="col-sm-5 left2">
+            <img
+              src="Asserts/lee-campbell-DtDlVpy-vvQ-unsplash.jpg"
+              style="width: 100%"
+            />
+          </div>
           <div class="col-sm-7 right-2">
-            <h1>About Me</h1>
-<p>As a FullStack developer, my journey has been fueled by a passion for technology and a commitment to delivering high-quality digital solutions. My proficiency in front-end technologies such as HTML, CSS, JavaScript, jQuery, AngularJS, Bootstrap, and ReactJS allows me to create visually appealing and responsive user interfaces. I understand the importance of user experience and strive to ensure that every interaction is seamless and engaging.
-
-  On the back-end, my skills in Java, PHP, Laravel, and SQL enable me to build robust server-side applications and manage databases efficiently.
-<br><br>
-I Collaboration is key in my work; I thrive in team environments where ideas can be shared and developed collectively. Whether it's through agile methodologies or regular brainstorming sessions, I believe that effective communication with stakeholders is essential to transforming concepts into reality. My goal is to continue evolving as a developer, embracing new technologies and methodologies to create innovative solutions that meet user needs.</p>
- 
+            <h1 style="color: purple">About Me</h1>
+            <br />
+            <p>
+              As a FullStack developer, my journey has been fueled by a passion
+              for technology and a commitment to delivering high-quality digital
+              solutions. My proficiency in front-end technologies such as HTML,
+              CSS, JavaScript, jQuery, AngularJS, Bootstrap, and ReactJS allows
+              me to create visually appealing and responsive user interfaces. I
+              understand the importance of user experience and strive to ensure
+              that every interaction is seamless and engaging. On the back-end,
+              my skills in Java, PHP, Laravel, and SQL enable me to build robust
+              server-side applications and manage databases efficiently.
+              <br /><br />
+              I Collaboration is key in my work; I thrive in team environments
+              where ideas can be shared and developed collectively. Whether it's
+              through agile methodologies or regular brainstorming sessions, I
+              believe that effective communication with stakeholders is
+              essential to transforming concepts into reality. My goal is to
+              continue evolving as a developer, embracing new technologies and
+              methodologies to create innovative solutions that meet user needs.
+            </p>
           </div>
         </div>
       </div>
-  
-    </div>   
-  <div style="height: 100%;background-color: black;color: white;">
-   <div class="container p-5 p5cont" style="font-family: monospace;">
-    <h1>Technical Skills</h1>
-    <div class="row p-5" >
-      <div class="col-sm-4 d-flex flex-column justify-content-center">
-        <h4>HTML</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 98%;">98%</div></div>
-      </div>
-      <div class="col-sm-4 d-flex flex-column justify-content-center"> <h4>CSS</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 90%;">90%</div></div></div>
-      <div class="col-sm-4 d-flex justify-content-center flex-column"><h4>Bootstrap</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 94%;">94%</div></div></div>
-      <div class="col-sm-4 d-flex flex-column justify-content-center flex-column"><h4>JavaScript</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 88%;">88%</div></div></div>
-      <div class=" flex-column col-sm-4 d-flex justify-content-center"><h4>React Js</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 85%;">85%</div></div></div>
-      <div class="col-sm-4 d-flex justify-content-center flex-column"><h4>JQuery</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 90%;">90%</div></div></div>
-      <div class="col-sm-4 d-flex justify-content-center flex-column"><h4>php</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 72%;">72%</div></div></div>
-      <div class="col-sm-4 d-flex justify-content-center flex-column"><h4>Angular Js</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 80%;">80%</div></div></div>
-      <div class="col-sm-4 d-flex justify-content-center flex-column"><h4>MySql</h4>
-        <div class="perc-parent"><div class="perc-class" style="width: 88%;">88%</div></div></div>
     </div>
-   </div>
-  </div>
+    <style>
+      .progress-circle {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: conic-gradient(
+          #9369b3 0%,
+          #b358e4 var(--percentage),
+          #927594 var(--percentage),
+          #ffffff 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .progress-circle span {
+        position: absolute;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+    <div
+      style="height: 100%; background-color: black; color: white"
+      id="section3"
+    >
+      <div class="container p5cont t-s">
+        <br /><br />
+        <h1 class="text-center" style="color: purple">Technical Skills</h1>
+        <br />
+        <style>
+          .innner div {
+            margin-bottom: 21px;
+          }
+
+          .progress {
+            margin-top: 0;
+          }
+        </style>
+        <div class="row gap-3">
+          <div class="col-sm-4 mx-auto">
+            <div
+              class="innner d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <img style="width: 30px" src="Asserts/HTML5.png" /><img
+                  style="width: 30px"
+                  src="Asserts/CSS3.png"
+                />
+              </div>
+              <div class="ms-auto" style="font-weight: 800">HTML5 & CSS3</div>
+            </div>
+            <div
+              class="progress html-css"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 2vh"
+            >
+              <div class="progress-bar bg-success" style="font-weight: 800">
+                95%
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mx-auto">
+            <div
+              class="innner d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <img style="width: 30px" src="Asserts/JavaScript.png" />
+              </div>
+              <div class="ms-auto" style="font-weight: 800">JavaScript</div>
+            </div>
+            <div
+              class="progress js-style"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 2vh"
+            >
+              <div class="progress-bar bg-success" style="font-weight: 800">
+                92%
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mx-auto">
+            <div
+              class="innner d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <img style="width: 30px" src="Asserts/jQuery.png" /><img
+                  style="width: 30px"
+                  src="Asserts/AngularJS.png"
+                />
+              </div>
+              <div class="ms-auto" style="font-weight: 800">
+                Jquery & Angular
+              </div>
+            </div>
+            <div
+              class="progress query-angular"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 2vh"
+            >
+              <div class="progress-bar bg-success" style="font-weight: 800">
+                90%
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mx-auto">
+            <div
+              class="innner d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <img style="width: 30px" src="Asserts/Bootstrap.png" />
+              </div>
+              <div class="ms-auto" style="font-weight: 800">Bootstrap</div>
+            </div>
+            <div
+              class="progress b-strap"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 2vh"
+            >
+              <div class="progress-bar bg-success" style="font-weight: 800">
+                93%
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mx-auto">
+            <div
+              class="innner d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <img style="width: 30px" src="Asserts/PHP.png" /><img
+                  style="width: 30px"
+                  src="Asserts/Laravel.png"
+                />
+              </div>
+              <div class="ms-auto" style="font-weight: 800">PHP & Laravel</div>
+            </div>
+            <div
+              class="progress php-lara"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 2vh"
+            >
+              <div class="progress-bar bg-success" style="font-weight: 800">
+                84%
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mx-auto">
+            <div
+              class="innner d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="d-flex align-items-center justify-content-center gap-1"
+              >
+                <img style="width: 30px" src="Asserts/MySQL.png" />
+              </div>
+              <div class="ms-auto" style="font-weight: 800">mySql</div>
+            </div>
+            <div
+              class="progress my-sql"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="height: 2vh"
+            >
+              <div class="progress-bar bg-success" style="font-weight: 800">
+                95%
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <h1 style="color: rgb(158, 35, 152)" class="text-center">
+          Professional Skills
+        </h1>
+        <div class="row p-5">
+          <div
+            class="col-sm-3 d-flex justify-content-center align-items-center flex-column"
+          >
+            <h5 class="p-2">Problem Solving</h5>
+            <div
+              class="progress-circle"
+              data-val="95"
+              style="--percentage: 95%"
+            >
+              <span style="color: rgb(0, 0, 0); font-family: poppins">95%</span>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-3 d-flex justify-content-center align-items-center flex-column onHover"
+          >
+            <h5 class="p-2">Design Thinking</h5>
+            <div
+              class="progress-circle"
+              data-val="90"
+              style="--percentage: 90%"
+            >
+              <span style="color: rgb(0, 0, 0); font-family: poppins">90%</span>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 d-flex justify-content-center align-items-center flex-column"
+          >
+            <h5 class="p-2">Analytical Skills</h5>
+            <div
+              class="progress-circle"
+              data-val="95"
+              style="--percentage: 95%"
+            >
+              <span style="color: rgb(0, 0, 0); font-family: poppins">95%</span>
+            </div>
+          </div>
+          <div
+            class="col-sm-3 d-flex justify-content-center align-items-center flex-column"
+          >
+            <h5 class="p-2">Communication Skills</h5>
+            <div
+              class="progress-circle"
+              data-val="85"
+              style="--percentage: 85%"
+            >
+              <span style="color: rgb(0, 0, 0); font-family: poppins">85%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="" id="section4" style="background-color: black">
+      <div class="container p5cont">
+        <h1 class="text-center" style="color: purple">Projects</h1>
+        <br />
+        <div class="row">
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center flex-column"
+          >
+            <div class="image-container">
+              <div class="img-co">
+                <img
+                  src="Asserts/React.png"
+                  alt="Description of Image 1"
+                  class="centered-image"
+                />
+                <div class="img-textt">
+                  <div>
+                    Discover the ultimate salon experience with Trim and Grin.
+                    Our intuitive app lets you seamlessly book your favorite
+                    services, add them to your cart, and explore a beautifully
+                    designed homepage that showcases all our offerings. Whether
+                    you need a quick trim or a luxurious pampering session, our
+                    user-friendly interface ensures that you can effortlessly
+                  </div>
+                  <button class="btn btn-success">View Link</button>
+                </div>
+              </div>
+              <div
+                class="text-overlay text-center img-text"
+                style="font-family: poppins; color: rgb(154, 151, 151)"
+              >
+                Know More
+              </div>
+              <div>Salon Shop WebPage</div>
+              <span class="textt">React Js</span>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center flex-column"
+          >
+            <div class="image-container">
+              <div class="img-co">
+                <img
+                  src="Asserts/Java.png"
+                  alt="Description of Image 1"
+                  class="centered-image"
+                />
+                <div class="img-textt">
+                  <div>
+                    Experience seamless travel booking with our advanced JDBC
+                    airline ticket management system. Effortlessly search for
+                    flights, manage reservations, and secure your tickets
+                    through a robust and user-friendly interface. Our system
+                    ensures real-time updates, allowing you to explore available
+                    flights, choose your preferred seats, and confirm your
+                    bookings with ease. Whether you're planning a business trip
+                    or a vacation
+                  </div>
+                  <button class="btn btn-success">View Link</button>
+                </div>
+              </div>
+              <div
+                class="text-overlay text-center img-text"
+                style="font-family: poppins; color: rgb(154, 151, 151)"
+              >
+                Know More
+              </div>
+              <div>Airline Ticket Booking</div>
+              <span>JDBC</span>
+            </div>
+          </div>
+
+          <div
+            class="col-md-4 d-flex align-items-center justify-content-center flex-column"
+          >
+            <div class="image-container">
+              <div class="img-co">
+                <img
+                  src="Asserts/Bootstrap.png"
+                  alt="Description of Image 1"
+                  class="centered-image"
+                />
+                <div class="img-textt">
+                  <div>
+                    Elevate your cloud hosting experience with our sleek and
+                    responsive Bootstrap-based UI. Designed for efficiency and
+                    ease of use, our interface allows you to manage your cloud
+                    infrastructure with just a few clicks. Seamlessly navigate
+                    through various hosting options, monitor resource usage, and
+                    scale your services effortlessly. The clean, modern design
+                    ensures that you can focus on what matters most—optimizing
+                    your cloud environment.
+                  </div>
+                  <button class="btn btn-success">View Link</button>
+                </div>
+              </div>
+              <div
+                class="text-overlay text-center img-text"
+                style="font-family: poppins; color: rgb(154, 151, 151)"
+              >
+                Know More
+              </div>
+              <div>Cloud Hosting UI</div>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
