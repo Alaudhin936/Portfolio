@@ -190,6 +190,9 @@
   top: 1vh;
   font-size: 1em;
 }
+.img-co img{
+  width: 250px;
+}
 .top-left-img {
   width: 22vw;
   position: absolute;
@@ -216,6 +219,7 @@
     transform: translateY(-100%);
   }
 }
+
 @media (max-width: 1000px) {
   .social-media {
     display: flex;
@@ -290,6 +294,11 @@
   }
 }
 @media (max-width: 550px) {
+
+    .img-co img{
+      width: 130px;
+    }
+  
   .progress {
     margin-top: 12.5vh;
   }
