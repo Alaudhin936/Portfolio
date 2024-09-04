@@ -1,37 +1,35 @@
 $(document).ready(function () {
   let progrssId = $("#prog");
-
   runWords();
-  $('.img-textt').css('height','40vh').css('padding','5px')
+  $(".img-textt").css("height", "40vh").css("padding", "5px");
   $(".img-textt").hide();
-$(".image-container").mouseover(function () {
-  $(this).css('boxShadow','0 0 5px purple')
-  $(this).find(".img-text").fadeOut(100); 
+  $(".image-container").mouseover(function () {
+    $(this).css("boxShadow", "0 0 5px purple");
+    $(this).find(".img-text").fadeOut(100);
 
-  
-  $(this).find(".img-textt").show().css({
-    display: "flex",
-    alignItems: "center",
-    color: "white",
-    flexDirection: "column",
-    justifyContent: "center",
-    gap: "15px",
-    animationName: "fromTopp",
-    animationDuration: "1s",
-    animationFillMode: "forwards",
-  }); 
-});
+    $(this).find(".img-textt").show().css({
+      display: "flex",
+      alignItems: "center",
+      color: "white",
+      flexDirection: "column",
+      justifyContent: "center",
+      gap: "15px",
+      animationName: "fromTopp",
+      animationDuration: "1s",
+      animationFillMode: "forwards",
+    });
+  });
 
-$(".image-container").mouseleave(function () {
-  $(this).find(".img-textt").fadeOut(1000); 
-  $(this).find("img").show().css({
-    animationName: "fromTopp",
-    animationDuration: "1s",
-    animationFillMode: "forwards",
-  }); 
-  $(this).css('boxShadow','none')
-  $(this).find(".img-text").fadeIn(100); 
-});
+  $(".image-container").mouseleave(function () {
+    $(this).find(".img-textt").fadeOut(1000);
+    $(this).find("img").show().css({
+      animationName: "fromTopp",
+      animationDuration: "1s",
+      animationFillMode: "forwards",
+    });
+    $(this).css("boxShadow", "none");
+    $(this).find(".img-text").fadeIn(100);
+  });
 
   function runWords() {
     $(".left2").css("display", "none");
