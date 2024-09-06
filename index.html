@@ -11,6 +11,19 @@
     <script src="Jquery/query.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Outfit:wght@100..900&family=Patrick+Hand+SC&display=swap"
       rel="stylesheet"
@@ -132,7 +145,7 @@
       ></div>
     </div>
 
-    <div id="section1" class="top-div">
+    <div id="section1"  class="top-div">
       <div
         class="container p5cont"
         style="
@@ -203,7 +216,7 @@
         }
       }
     </style>
-    <div style="height: 100%; background-color: black" id="section2">
+    <div style="height: 100%; background-color: black" id="section2" data-aos="flip-right">
       <div class="container contt p5cont">
         <style>
           .left2 {
@@ -294,7 +307,7 @@
     <div
       class="mt-5"
       style="height: 100%; background-color: black; color: white"
-      id="section3"
+      id="section3" 
     >
       <div class="container p5cont t-s">
         <br /><br />
@@ -471,12 +484,17 @@
               </div>
             </div>
           </div>
+          <script>
+            AOS.init({
+    delay: 500 
+  });
+          </script>
         </div>
         <br /><br />
         <h1 style="color: rgb(158, 35, 152)" class="text-center mt-5">
           Professional Skills
         </h1>
-        <div class="row p-5 mb-3">
+        <div class="row p-5 mb-3" data-aos="flip-up">
           <div
             class="col-sm-3 d-flex justify-content-center align-items-center flex-column"
           >
@@ -529,7 +547,7 @@
         </div>
       </div>
     </div>
-    <div class="" id="section4" style="background-color: black">
+    <div class="" id="section4" style="background-color: black" data-aos="flip-left">
       <div class="container p5cont">
         <h1 class="text-center" style="color: purple">Projects</h1>
         <br />
@@ -640,7 +658,7 @@
       </div>
     </div>
     <div></div>
-    <div class="mt-4" id="section5">
+    <div class="mt-4" id="section5"  data-aos="fade-up">
       <div class="container p5cont">
         <h1 class="text-center" style="color: purple">Contact Me</h1>
         <h4 class="text-center mb-5">Let's make something great together</h4>
@@ -652,7 +670,7 @@
             <img
               class="ho-img"
               src="Asserts/Gmail_icon_(2020).svg"
-              style="width: 30%"
+              style="width: 40%"
             />
             <div
               class="centered text-white text-center"
@@ -694,8 +712,16 @@
                 filter: brightness(0.6);
                 opacity: 0.8;
               }
+              @media (max-width: 600px) {
+                iframe {
+                  width: 100%;
+                  height: 30vh;
+                  filter: brightness(0.6);
+                  opacity: 0.8;
+                }
+              }
             </style>
-            <iframe
+            <iframe data-aos="fade-right"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7773.792299408717!2d79.8100519948573!3d13.042281851219283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5294132ee43571%3A0x80dcd752774d909f!2sPerambakkam%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1725528326681!5m2!1sen!2sin"
               width="600"
               height="450"
@@ -705,7 +731,7 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div
+          <div data-aos="fade-left"
             class="col-md-6 mx-auto p-2 d-flex flex-column justify-content-center gap-3 meme"
           >
             <style>
@@ -755,8 +781,13 @@
         </div>
       </div>
     </div>
-    <footer style="height: 10vh;box-shadow: 0 0 5px rgb(63, 51, 62);" class="d-flex align-items-center justify-content-center">
-<h6 class="text-white" style="opacity: 0.5;">Â©All Rights Reserved@Alaudhin2024</h6>
+    <footer
+      style="height: 10vh; box-shadow: 0 0 5px rgb(63, 51, 62)"
+      class="d-flex align-items-center justify-content-center"
+    >
+      <h6 class="text-white" style="opacity: 0.5">
+        Â©All Rights Reserved@Alaudhin2024
+      </h6>
     </footer>
   </body>
 </html>
